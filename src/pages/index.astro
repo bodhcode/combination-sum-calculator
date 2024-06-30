@@ -1,0 +1,65 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+---
+
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Combination Sum Calculator</title>
+    <meta property="og:title" content="Combination Sum Calculator" />
+    <meta
+      name="description"
+      content="Combination sum calculator is a simple tool website which helps you to
+      find all the possible combinations of a sum. Simply enter the sum and list
+      of numbers, then it will instantly show all the possible combinations that
+      adds up to your desired target."
+    />
+    <meta
+      property="og:description"
+      content="Combination sum calculator is a simple tool website which helps you to
+      find all the possible combinations of a sum. Simply enter the sum and list
+      of numbers, then it will instantly show all the possible combinations that
+      adds up to your desired target."
+    />
+    <meta property="og:image" content="#" />
+    <meta property="og:image:alt" content="Combination Sum Calculator" />
+    <meta property="og:site_name" content="Combination Sum Calculator" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://combinationsumcalculator.pages.dev"
+    />
+    <meta
+      name="keywords"
+      content="combination sum calculator, combination sum, sum calculator, sum cal, combination solver, calculator combinations, sums calculator, calculator with combinations, calculator sum, number sum, add up numbers"
+    />
+    <meta name="author" content="Combination Sum Calculator" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #fdfaf3;
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <Navigation />
+    <Hero />
+    <Footer />
+
+    <script>
+      import "../scripts/CombinationSumCalculator.js";
+    </script>
+  </body>
+</html>

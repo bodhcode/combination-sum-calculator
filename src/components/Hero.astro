@@ -1,0 +1,217 @@
+---
+
+---
+
+<div id="page">
+  <h1>Combination Sum Calculator</h1>
+  <div class="mt-4 text-center">
+    <p class="text-lg text-gray-700 text-center">
+      Combination sum calculator is a simple tool website which helps you to
+      find all the possible combinations of a sum. Simply enter the sum and list
+      of numbers, then it will instantly show all the possible combinations that
+      adds up to your desired target.
+    </p>
+  </div>
+  <section id="input-section" class="mt-4">
+    <label class="label">
+      <strong>Sum</strong>
+    </label>
+    <input
+      id="target"
+      type="number"
+      placeholder="Sum"
+      class="input input-bordered w-full"
+    />
+    <label class="label mt-4">
+      <strong>Enter Numbers:</strong>
+    </label>
+    <textarea
+      id="candidates"
+      class="textarea textarea-bordered"
+      placeholder="1 2 3"></textarea>
+  </section>
+  <h2 class="text-2xl font-bold">Combinations</h2>
+  <section
+    id="output-section"
+    class="carda bg-[#fff] text-[#2c2c2c] p-6 mt-4 rounded-lg shadow-lg text-xl"
+  >
+    <noscript
+      ><p class="alert">
+        JavaScript is disabled. You must enable JavaScript for this application
+        to work.
+      </p></noscript
+    >
+  </section>
+  <button id="reset-button" class="btn w-[50%] bg-[#2c2c2c] text-white mt-4"
+    >Reset</button
+  >
+  <div
+    id="additional-content"
+    class="bg-[#fff] text-[#2c2c2c] p-6 mt-8 rounded-lg shadow-lg"
+  >
+    <h2 class="text-2xl font-bold mb-4">
+      What is a Combination Sum Calculator?
+    </h2>
+    <p class="text-lg text-left leading-relaxed">
+      Combination sum calculator is a simple online math tool which helps you to
+      find all the possible outcomes that add up to a given sum. Simply enter
+      the target sum in the first input box and numbers in the second box. This
+      tool will automatically calculate and display all the possible
+      combinations.
+    </p>
+    <p class="text-lg text-left leading-relaxed mt-4">
+      For example, if the target sum is 9 and you enter the numbers 2, 3, 4, 5,
+      and 7. Then this tool will display all the possible combinations 2 + 3 + 4
+      = 9, 2 + 7 = 9, and 4 + 5 = 9.
+    </p>
+    <h2 class="text-2xl font-bold mb-4 mt-8">
+      How to Use the Combination Sum Calculator?
+    </h2>
+    <p class="text-lg text-left leading-relaxed">
+      Follow these steps to find all the possible combinations:
+    </p>
+    <ol class="text-lg text-left leading-relaxed">
+      <li class="p-2">
+        <strong>Step 1: </strong>Enter your desire sum in the first input box.
+      </li>
+      <li class="p-2">
+        <strong>Step 2: </strong>Enter all the numbers with a comma (,). For
+        example, if you want to numbers 2, 3, 4, 5 and 7 to reach the target
+        sum, you would enter "2", "3", "4", "5", and "7" in the box.
+      </li>
+      <li class="p-2">
+        <strong>Step 3: </strong>After that, this tool will automatically
+        calculate and display all the possible combinations that will add up to
+        the target sum.
+      </li>
+    </ol>
+    <h2 class="text-2xl font-bold mb-4 mt-8">
+      Features of Combination Sum Calculator
+    </h2>
+    <ul class="text-lg text-left leading-relaxed">
+      <li class="p-2">
+        <strong>1. </strong>Creating puzzles that requires finding specific
+        combinations.
+      </li>
+      <li class="p-2">
+        <strong>2. </strong>Finding all possible ways to place a given budget
+        among various expenses.
+      </li>
+      <li class="p-2">
+        <strong>3. </strong>Finding combinations of food calories that meet
+        nutritional goals.
+      </li>
+    </ul>
+  </div>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #page {
+      padding: 2rem;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background: #fafafa;
+    }
+
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 0.5px;
+      font-weight: 900;
+      text-align: center;
+      color: #2e2b23;
+    }
+
+    /* Combination Sum Calculator */
+
+    textarea {
+      width: 100%;
+      height: 10rem;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-family: "Poppins", "Roboto", sans-serif;
+      margin: 1rem;
+    }
+
+    .alert {
+      color: #ff5e5e;
+    }
+
+    .section-container {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+    @media (max-width: 800px) {
+      .section-container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    #input-section {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      display: flex;
+      flex-wrap: wrap;
+      -ms-grid-row-align: start;
+    }
+    @media (max-width: 800px) {
+      #input-section {
+        width: 100%;
+      }
+    }
+
+    #output-section {
+      -ms-grid-row: 1;
+      -ms-grid-column: 2;
+      letter-spacing: 0.1rem;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #output-section p {
+      margin: 1rem;
+      transition: all 0.3s linear;
+    }
+
+    .carda {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 1rem;
+      padding: 1rem;
+      width: 100%;
+      max-width: 800px;
+      transition: all 0.3s ease-in-out;
+      min-height: 200px;
+    }
+
+    .carda p {
+      margin: 0.5rem 0;
+    }
+
+    @media (max-width: 800px) {
+      #output-section {
+        -ms-grid-column: 1;
+        width: 100%;
+      }
+    }
+
+    /* Responsive */
+    @media only screen and (max-width: 576px) {
+      h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  </style>
+</div>
